@@ -8,6 +8,7 @@ import { Post, PostService } from '../services/getPosts.service';
   styleUrls: ['./second-page.component.scss'],
 })
 export class SecondPageComponent implements OnInit {
+  
   posts!: Post[];
   user!: number;
 

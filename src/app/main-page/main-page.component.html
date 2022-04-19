@@ -1,4 +1,7 @@
-<h2>Пользователи:</h2>
-<div *ngFor="let post of (posts | repeatFilter) ">
-    <a [routerLink]="['/posts']" [queryParams]="{user: post}" >Пользователь: {{post}} </a>
+<div>
+    <h2>Пользователи:</h2>
+    <div  *ngFor="let post of (posts | repeatFilter)" class="margin-bottom " >
+        <a class="big-text" [routerLink]="['/posts']" [queryParams]="{user: post}"
+         >Пользователь: {{post}} </a>
+    </div>
 </div>
